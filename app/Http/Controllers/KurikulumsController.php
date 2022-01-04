@@ -86,7 +86,7 @@ class KurikulumsController extends Controller
                 'kelompok_mk'       => $request->kelompok_mk,
                 'sks'               => $request->sks,
                 'semester'          => $request->semester,
-                'document'          => 'document/' . $nama_document,
+                'document'          => request('document') ? 'document/' . $nama_document : null,
             ]);
 
         return redirect(route('kurikulums.index'))->with('alert', 'Data berhasil diupdate!');

@@ -47,7 +47,7 @@
                                         <div class="form-group">
                                             <label>Bidang Minat <span class="text-danger">*</span></label>
                                             <select class="form-control" name="bidangminat">
-                                                <option selected="selected">- Pilih Bidang Minat -</option>
+                                                <option value="" selected="selected">- Pilih Bidang Minat -</option>
                                                 <option value="IT GOVERNANCE">IT GOVERNANCE</option>
                                                 <option value="DATA SCIENCE">DATA SCIENCE</option>
                                                 <option value="ENTERPRISE SYSTEM">ENTERPRISE SYSTEM</option>
@@ -58,7 +58,7 @@
                                         <div class="form-group">
                                             <label>Kelompok Mata Kuliah <span class="text-danger">*</span></label>
                                             <select class="form-control" name="kelompok_mk">
-                                                <option selected="selected">- Pilih Kelompok Mata Kuliah -</option>
+                                                <option value="" selected="selected">- Pilih Kelompok Mata Kuliah -</option>
                                                 <option value="MBP">MBP (Mata Kuliah Perilaku Berkarya)</option>
                                                 <option value="MKB">MKB (Mata Kuliah Keahlian Berkarya)</option>
                                                 <option value="MKK">MKK (Mata Kuliah Keilmuan & Keterampilan)</option>

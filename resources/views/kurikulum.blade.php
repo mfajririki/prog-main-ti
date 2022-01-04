@@ -114,7 +114,11 @@
                                                             <tr style="color: darkblue">
                                                                <td>{{ $no+1 }}</td>
                                                             <td>{{ $semester2_mk->kode_mk }}</td>
-                                                            <td>{{ $semester2_mk->nama_mk }}</td>
+                                                            @if ($semester1_mk->document == null)
+                                                                <td>{{ $semester2_mk->nama_mk }}</td>
+                                                            @else
+                                                            <td><a href="{{ asset($semester2_mk->document) }}" target="_blank">{{ $semester2_mk->nama_mk }}</a></td>
+                                                            @endif                                                            
                                                             <td>{{ $semester2_mk->kelompok_mk }}</td>
                                                             <td>{{ $semester2_mk->sks }}</td>
                                                             </tr>
@@ -139,7 +143,11 @@
                                                             <tr style="color: darkblue">
                                                                <td>{{ $no+1 }}</td>
                                                             <td>{{ $semester3_mk->kode_mk }}</td>
-                                                            <td>{{ $semester3_mk->nama_mk}}</td>
+                                                            @if ($semester3_mk->document == null)
+                                                                <td>{{ $semester3_mk->nama_mk }}</td>
+                                                            @else
+                                                            <td><a href="{{ asset($semester3_mk->document) }}" target="_blank">{{ $semester3_mk->nama_mk }}</a></td>
+                                                            @endif                                                            
                                                             <td>{{ $semester3_mk->kelompok_mk}}</td>
                                                             <td>{{ $semester3_mk->sks}}</td>
                                                             </tr>
@@ -164,7 +172,11 @@
                                                             <tr style="color: darkblue">
                                                                <td>{{ $no+1 }}</td>
                                                             <td>{{ $semester4_mk->kode_mk }}</td>
-                                                            <td>{{ $semester4_mk->nama_mk}}</td>
+                                                            @if ($semester4_mk->document == null)
+                                                                <td>{{ $semester4_mk->nama_mk }}</td>
+                                                            @else
+                                                            <td><a href="{{ asset($semester4_mk->document) }}" target="_blank">{{ $semester4_mk->nama_mk }}</a></td>
+                                                            @endif                                                            
                                                             <td>{{ $semester4_mk->kelompok_mk}}</td>
                                                             <td>{{ $semester4_mk->sks}}</td>
                                                             </tr>
@@ -189,7 +201,11 @@
                                                             <tr style="color: darkblue">
                                                                <td>{{ $no+1 }}</td>
                                                             <td>{{ $semester5_mk->kode_mk }}</td>
-                                                            <td>{{ $semester5_mk->nama_mk}}</td>
+                                                            @if ($semester5_mk->document == null)
+                                                                <td>{{ $semester5_mk->nama_mk }}</td>
+                                                            @else
+                                                            <td><a href="{{ asset($semester5_mk->document) }}" target="_blank">{{ $semester5_mk->nama_mk }}</a></td>
+                                                            @endif                                                            
                                                             <td>{{ $semester5_mk->kelompok_mk}}</td>
                                                             <td>{{ $semester5_mk->sks}}</td>
                                                             </tr>
@@ -228,7 +244,11 @@
                                                             <tr style="color: darkblue">
                                                                <td>{{ $no+1 }}</td>
                                                             <td>{{ $semester6_mk->kode_mk }}</td>
-                                                            <td>{{ $semester6_mk->nama_mk}}</td>
+                                                            @if ($semester6_mk->document == null)
+                                                                <td>{{ $semester6_mk->nama_mk }}</td>
+                                                            @else
+                                                            <td><a href="{{ asset($semester6_mk->document) }}" target="_blank">{{ $semester6_mk->nama_mk }}</a></td>
+                                                            @endif                                                            
                                                             <td>{{ $semester6_mk->kelompok_mk}}</td>
                                                             <td>{{ $semester6_mk->sks}}</td>
                                                             </tr>
@@ -267,7 +287,11 @@
                                                             <tr style="color: darkblue">
                                                                <td>{{ $no+1 }}</td>
                                                             <td>{{ $semester7_mk->kode_mk }}</td>
-                                                            <td>{{ $semester7_mk->nama_mk}}</td>
+                                                            @if ($semester1_mk->document == null)
+                                                                <td>{{ $semester7_mk->nama_mk }}</td>
+                                                            @else
+                                                            <td><a href="{{ asset($semester7_mk->document) }}" target="_blank">{{ $semester7_mk->nama_mk }}</a></td>
+                                                            @endif                                                            
                                                             <td>{{ $semester7_mk->kelompok_mk}}</td>
                                                             <td>{{ $semester7_mk->sks}}</td>
                                                             </tr>

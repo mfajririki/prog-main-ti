@@ -39,6 +39,42 @@
 
 <body class="post-template-default single single-post postid-13735 single-format-standard gdlr-core-body tribe-no-js kingster-body kingster-body-front kingster-full  kingster-with-sticky-navigation  kingster-blog-style-1  kingster-blockquote-style-1 gdlr-core-link-to-lightbox">
     <!-- Body -->
+    {{-- start navbar mobile --}}
+    <div class="kingster-mobile-header-wrap">
+        <div class="kingster-mobile-header kingster-header-background kingster-style-slide kingster-sticky-mobile-navigation " id="kingster-mobile-header">
+            <div class="kingster-mobile-header-container kingster-container clearfix">
+                <div class="kingster-logo  kingster-item-pdlr">
+                    <div class="kingster-logo-inner">
+                        <a class="" href="{{ route('landing') }}"><img src="{{ url('assets/content/uploads/2021/06/ubd_logo.png') }}" alt="" /></a>
+                    </div>
+                </div>
+                <div class="kingster-mobile-menu-right">
+                    <div class="kingster-mobile-menu"><a class="kingster-mm-menu-button kingster-mobile-menu-button kingster-mobile-button-hamburger" href="#kingster-mobile-menu"><span></span></a>
+                        <div class="kingster-mm-menu-wrap kingster-navigation-font" id="kingster-mobile-menu" data-slide="right">
+                            <ul id="menu-main-navigation" class="m-menu">
+                                <li class="menu-item"><a href="{{ route('landing') }}">Beranda</a></li>
+                                <li class="menu-item"><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Kurikulum</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="{{ route('kurikulum_konten') }}">Kurikulum Sistem Informasi</a></li>
+                                        <li class="menu-item"><a href="{{ route('bimbingan_akademik') }}">Bimbingan Akademik</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="{{ route('halpanduan') }}">Panduan</a></li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Tentang</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="/staf">Staf Pengajar</a></li>
+                                        <li class="menu-item"><a href="/profilelulusan">Profil Lulusan</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- end navbar mobile --}}
     <div class="kingster-body-outer-wrapper ">
         <div class="kingster-body-wrapper clearfix  kingster-with-frame">
             <!-- Header Navbar -->            
@@ -96,7 +132,7 @@
             </header>
 
             {{-- Slider --}}
-            <div style="background-color: #202021; padding: 20px 20px 20px 20px">
+            <div style="background-color: #202021;">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         @if ($sliders == [])

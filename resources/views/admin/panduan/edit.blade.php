@@ -64,6 +64,7 @@
                                                 <tr>
                                                     <td>
                                                         {{ $panduan->document }}
+                                                        <input type="hidden" name="old" value="{{ $panduan->document }}">
                                                     </td>
                                                     <td>
                                                         <a class="btn btn-sm btn-info"

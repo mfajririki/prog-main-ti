@@ -104,7 +104,7 @@
                                 <li class="nav-item">
                                     <a href="{{ route('tentang.index') }}" class="nav-link {{ Request::segment(1) == 'tentang'  ? 'active' : '' }}">
                                         <i class="nav-icon fas fa-file"></i>
-                                        <p>Tentang Prodi SI</p>
+                                        <p>Tentang Prodi Teknik Informatika</p>
                                     </a>
                                 </li>                                
                                 <li class="nav-item">

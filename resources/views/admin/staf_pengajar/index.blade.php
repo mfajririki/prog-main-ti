@@ -25,6 +25,37 @@
                     <div class="card-header">
                         <a href="{{ route('staf_pengajar.create') }}" class="btn btn-sm btn-primary">Tambah Data <i
                                 class="ml-2 fa fa-plus fa-sm"></i></a>
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#importExcel">
+                            Import Excel <i class="ml-2 fa fa-file"></i>
+                        </button>
+                        <div class="modal fade" id="importExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <form method="post" action="/staf/import_excel" enctype="multipart/form-data">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Import Excel</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src={{ asset("images/ContohImportStaff.png") }} class="rounded mx-auto d-block" alt="Contoh penulisan excel" width="700px">
+
+                                            {{ csrf_field() }}
+
+                                            <label>Pilih file excel </label><span class="text-danger">&nbsp; *csv, xls, xlsx</span>
+                                            <div class="form-group">
+                                                <input type="file" name="file" required="required">
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Import</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="/staf/delete_all" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus semua data?');">Hapus Semua<i
+                            class="ml-2 fa fa-trash fa-sm"></i></a>
                     </div>
                     <!-- /.card-header -->
 

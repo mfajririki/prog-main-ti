@@ -106,7 +106,7 @@
                                         <i class="nav-icon fas fa-file"></i>
                                         <p>Tentang Prodi Teknik Informatika</p>
                                     </a>
-                                </li>                                
+                                </li>
                                 <li class="nav-item">
                                     <a href="{{ route('profile_kaprodi.index') }}" class="nav-link {{ Request::segment(1) == 'profile_kaprodi'  ? 'active' : '' }}">
                                         <i class="nav-icon fas fa-user"></i>
@@ -185,7 +185,7 @@
                                 </li>
                                 </div>
                             </ul>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a href="{{ route('slider.index') }}" class="nav-link {{ Request::segment(1) == 'slider'  ? 'active' : '' }}">
                                 <i class="nav-icon fas  fa-clone"></i>
@@ -307,7 +307,7 @@
         });
     </script>
 
-    {{-- tree --}}    
+    {{-- tree --}}
     <script>
          $('ul').on('expanded.lte.treeview', handleExpandedEvent)
     </script>
@@ -335,6 +335,6 @@
         $(function() {
             bsCustomFileInput.init();
         });
-    </script>    
+    </script>
 </body>
 </html>

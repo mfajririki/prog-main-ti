@@ -56,7 +56,7 @@
                                 <li class="menu-item"><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
                                 <li class="menu-item menu-item-has-children"><a href="#">Kurikulum</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item"><a href="{{ route('kurikulum_konten') }}">Kurikulum Sistem Informasi</a></li>
+                                        <li class="menu-item"><a href="{{ route('kurikulum_konten') }}">Kurikulum Teknik Informatika</a></li>
                                         <li class="menu-item"><a href="{{ route('bimbingan_akademik') }}">Bimbingan Akademik</a></li>
                                     </ul>
                                 </li>
@@ -67,6 +67,17 @@
                                         <li class="menu-item"><a href="/profilelulusan">Profil Lulusan</a></li>
                                     </ul>
                                 </li>
+                                <ul class="menu-item">
+                                    @guest
+                                    <li class="menu-item">
+                                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                                    </li>
+                                    @else
+                                    <li class="menu-item">
+                                        <a class="nav-link" href="{{ route('login') }}">Admin</a>
+                                    </li>
+                                    @endguest
+                                </ul>
                             </ul>
                         </div>
                     </div>
@@ -146,12 +157,12 @@
                     <div class="carousel-inner">
                         @if ($sliders == [])
                             <div class="carousel-item active">
-                                <img src="images/slider.png" class="d-block w-100" alt="slider" style="height: 275px;">
+                                <img src={{ asset("images/slider.png") }} class="d-block w-100" alt="slider" style="height: 275px;">
                             </div>
                         @else
                             @foreach ($sliders as $no => $slider)
                             <div class="carousel-item {{ ($no === 0) ? 'active' : '' }}">
-                                <img src="{{ $slider->photo }}" class="d-block w-100" alt="{{ $slider->nama }}" style="height: 275px;">
+                                <img src="{{ asset($slider->photo) }}" class="d-block w-100" alt="{{ $slider->nama }}" style="height: 275px;">
                             </div>
                             @endforeach
                         @endif                        
@@ -207,7 +218,7 @@
                                 <div class="menu-campus-life-container">
                                     <ul id="menu-campus-life" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
                                         <li class="menu-item"><a href="https://www.binadarma.ac.id/" target="_blank">Portal Web UBD</a></li>
-                                        <li class="menu-item"><a href="https://sisfo.binadarma.ac.id/" target="_blank">Sistem Informasi Akademik</a></li>
+                                        <li class="menu-item"><a href="https://sisfo.binadarma.ac.id/" target="_blank">Teknik Informatika Akademik</a></li>
                                         <li class="menu-item"><a href="https://elearning.binadarma.ac.id/" target="_blank">E-Learning</a></li>                                                                                
                                     </ul>
                                 </div>

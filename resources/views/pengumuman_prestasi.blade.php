@@ -54,7 +54,7 @@
                                                     <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
                                                         <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">{{ $announcement->created_at->diffForHumans() }}</span>
 
-                                                        <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author"><span class="gdlr-core-head">By</span><a title="Posts by SI UBD" rel="author">SI UBD</a></span>
+                                                        <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author"><span class="gdlr-core-head">By</span><a title="Posts by TI UBD" rel="author">TI UBD</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -105,7 +105,7 @@
                                     <div class="gdlr-core-recent-post-widget-content">
                                         <div class="gdlr-core-recent-post-widget-title"><a href="{{ route('pengumuman_detail', $latest) }}">{{ $latest->title }}</a>
                                         </div>
-                                        <div class="gdlr-core-recent-post-widget-info"><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">{{ $latest->created_at->diffForHumans() }}</span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author"><span class="gdlr-core-head">By </span>SI UBD</span></div>
+                                        <div class="gdlr-core-recent-post-widget-info"><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">{{ $latest->created_at->diffForHumans() }}</span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author"><span class="gdlr-core-head">By </span>TI UBD</span></div>
                                     </div>
                                 </div>
                                 @empty

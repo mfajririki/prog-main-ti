@@ -17,7 +17,7 @@ class CreatePanduanDocumentTable extends Migration
             $table->id();
             $table->foreignId('panduan_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->string('name');
-            $table->text('document')->nullable();
+            $table->text('document');
             $table->timestamps();
         });
     }

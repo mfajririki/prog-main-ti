@@ -40,7 +40,7 @@
                                         <textarea name="visi" class="summernote">{{ $visi_misi->visi }}</textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputFile" class="d-block">Misis</label>
+                                        <label for="exampleInputFile" class="d-block">Misi</label>
                                         <textarea name="misi" class="summernote">{{ $visi_misi->misi }}</textarea>
                                     </div>
                                 </div>                                

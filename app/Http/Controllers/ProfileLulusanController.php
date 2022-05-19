@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Imports\ProfileLulusanImport;
 use App\Models\ProfileLulusan;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Http\File;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\ProfileLulusanImport;
 use App\Http\Controllers\Controller;
 
 class ProfileLulusanController extends Controller
@@ -106,9 +106,9 @@ class ProfileLulusanController extends Controller
         return redirect(route('profile_lulusan.index'))->with('alert', 'Import berhasil.');
     }
 
-    public function delete_all(ProfileLulusan $profileLulusan)
+    public function delete_all(ProfileLulusan $profilelulusan)
     {
-        $profileLulusan->truncate();
+        $profilelulusan->truncate();
 
         return redirect(route('profile_lulusan.index'))->with('alert', 'Semua data berhasil dihapus');
     }

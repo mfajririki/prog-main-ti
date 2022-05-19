@@ -57,7 +57,7 @@ class PembimbingAkademikController extends Controller
 
     public function update($id, Request $request)
     {
-        if ($request->hasfile('document')) {
+        if ($request->file('document')) {
             $document = $request->file('document');
             $nama_document = time() . "_" . $document->getClientOriginalName();
             $tujuan_upload = public_path('document/');
@@ -66,7 +66,7 @@ class PembimbingAkademikController extends Controller
 
         $pembimbing_akademik = PembimbingAkademik::where('id', $id)
             ->update([
-                'document' => request('document') ? 'document/' . $nama_document : $request->old,
+                'document' => 'document/' . $nama_document,
                 'title'          => $request->title,
             ]);
 

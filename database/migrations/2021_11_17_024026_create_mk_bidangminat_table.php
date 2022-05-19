@@ -22,6 +22,7 @@ class CreateMkBidangminatTable extends Migration
             $table->string('semester');
             $table->integer('sks');
             $table->string('stream');
+            $table->text('document')->nullable();
             $table->timestamps();
         });
     }

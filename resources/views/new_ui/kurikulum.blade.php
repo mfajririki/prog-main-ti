@@ -9,7 +9,7 @@
                 <img src={{ asset('assets/images/kurikulumBanner.png') }} alt="www.binadarma.ac.id" style="width: 450px">
             </div>
             <div class="col align-self-center text-center">
-                <p class="judul">KURIKULUM PRODI TEKNIK INFROMATIKA</p>
+                <p class="judul">KURIKULUM PRODI TEKNIK INFORMATIKA</p>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@
             <p class="judul">PROGRAM STUDI TEKNIK INFORMATIKA</p>
             <P class="judul">FAKULTAS ILMU KOMPUTER</P>
             <P class="judul">UNIVERSITAS BINA DARMA</P>
-            <img src={{ asset('assets/images/TeknikInformatika.png') }} alt="Teknik Informatika Akreditasi B"
+            <img src={{ asset('assets/images/TIF.png') }} alt="Teknik Informatika Akreditasi B"
                 style="width: 200px" class="text-end">
         </div>
         <div class="col text-end">
